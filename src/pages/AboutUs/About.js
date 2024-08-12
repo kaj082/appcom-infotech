@@ -5,15 +5,12 @@ import {
   AboutSlide3,
   AboutSlide4,
   DetailWithImage,
-  HomeSlide3,
-  HomeSlide4,
   HomeSlide5,
   HomeSlide6,
   HomeSlide7,
-  OurMission,
   PrimaryLayout,
 } from "../../components";
-import { homeslide6Data, homeslide7Data } from "../../contants/dummy";
+import { homeslide7Data } from "../../contants/dummy";
 import styles from "./About.module.scss";
 
 const About = () => {

@@ -14,19 +14,19 @@ const TechnologyPartner = () => {
   return (
     <div className={styles.TechnologyPartner}>
       <div className={styles.row1}>
-        <img className={styles.image} src={image1} />
-        <img className={styles.image} src={image2} />
-        <img className={styles.image} src={image3} />
+        <img className={styles.image} src={image1} alt="logo-image" />
+        <img className={styles.image} src={image2} alt="logo-image" />
+        <img className={styles.image} src={image3} alt="logo-image" />
       </div>
       <div className={styles.row2}>
-        <img className={styles.image} src={image4} />
-        <img className={styles.image} src={image5} />
-        <img className={styles.image} src={image6} />
+        <img className={styles.image} src={image4} alt="logo-image" />
+        <img className={styles.image} src={image5} alt="logo-image" />
+        <img className={styles.image} src={image6} alt="logo-image" />
       </div>
       <div className={styles.row3}>
-        <img className={styles.image} src={image7} />
-        <img className={styles.image} src={image8} />
-        <img className={styles.image} src={image9} />
+        <img className={styles.image} src={image7} alt="logo-image" />
+        <img className={styles.image} src={image8} alt="logo-image" />
+        <img className={styles.image} src={image9} alt="logo-image" />
       </div>
     </div>
   );

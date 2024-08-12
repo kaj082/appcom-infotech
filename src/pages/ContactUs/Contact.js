@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import bg from "../../assets/slide7.png";
-import bg1 from "../../assets/contactus.png";
+
 import { ContactUs, HomeSlide7, PrimaryLayout } from "../../components";
 
 const Contact = () => {

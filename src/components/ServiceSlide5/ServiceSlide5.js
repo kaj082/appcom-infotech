@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ServiceSlide5.module.scss";
 import Button from "../button/Button";
 import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
 import ButtonType2 from "../buttontype2/ButtonType2";
 
 const ServiceSlide5 = () => {
-  const [active, setActive] = useState(0);
+  // const [active, setActive] = useState(0);
+  const active = 0;
   const buttons = [
     "Workstation AMC",
     "Server AMC",

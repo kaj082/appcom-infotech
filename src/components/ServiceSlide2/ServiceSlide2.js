@@ -57,7 +57,7 @@ const ServiceSlide2 = () => {
               <IconWithDesc
                 desc={item}
                 onClick={() => handleClick(index)}
-                isActive={index == active}
+                isActive={index === active}
               />
             ))}
           </div>
