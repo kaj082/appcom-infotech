@@ -1,21 +1,26 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import { routerConstant } from "./contants";
-import { About, Contact, Home, Service } from "./pages";
+import React, { Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
+import ErrorBoundary from "./ErrorBoundary";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function App() {
-  return (
-    <div className="App">
+// Lazily load other pages
+const AboutPage = lazy(() => import("./pages/AboutUs/About"));
+const ContactPage = lazy(() => import("./pages/ContactUs/Contact"));
+const ServicesPage = lazy(() => import("./pages/Service/Service"));
+const HomePage = lazy(() => import("./pages/Home/Home"));
+
+const App = () => (
+  <ErrorBoundary>
+    <Suspense>
       <Routes>
-        <Route path={routerConstant.ROUTES.HOME} element={<Home />} />
-        <Route path={routerConstant.ROUTES.ABOUT} element={<About />} />
-        <Route path={routerConstant.ROUTES.SERVICES} element={<Service />} />
-        <Route path={routerConstant.ROUTES.CONTACT_US} element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
-    </div>
-  );
-}
+    </Suspense>
+  </ErrorBoundary>
+);
 
 export default App;
