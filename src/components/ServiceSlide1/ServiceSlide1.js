@@ -23,7 +23,7 @@ const ServiceSlide1 = () => {
           <h3 className={styles.title}>{data.title}</h3>
           <h4 className={styles.subTitle}>{data.subTitle}</h4>
           <p className={styles.desc}>{data.description}</p>
-          <Button className={styles.btn}>get started</Button>
+          <Button className={styles.btn}>Explore Our Services</Button>
         </div>
 
         <div className={styles.imageContainer}>

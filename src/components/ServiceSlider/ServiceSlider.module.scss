@@ -1,33 +1,23 @@
-.box1 {
+.sliderWrapper {
   width: 100%;
-  position: relative;
-
+  height: fit-content;
   .slider {
-    width: 100%;
-
-    .slick-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .slick-slide > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 550px; // Fixed width for slides
-      margin-right: 200px; // Gap between slides
-    }
-
-    .slick-slide:last-child {
-      margin-right: 0;
+    .cardContainer {
+      padding-right: 41px;
     }
   }
+}
+@media (max-width: 900px) {
+  .sliderWrapper {
+    width: 100%;
+    height: fit-content;
 
-  @media (max-width: 750px) {
-    display: none;
     .slider {
-      display: none;
+      width: 100%;
+      .cardContainer {
+        // width: 50vw;
+        padding-right: 18px;
+      }
     }
   }
 }
