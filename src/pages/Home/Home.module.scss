@@ -1,7 +1,11 @@
 .Home {
   .slide1 {
+    margin-top: 140px;
+    margin-bottom: 142px;
     @media (max-width: 750px) {
       flex-direction: column-reverse !important;
+      margin-top: 0;
+      margin-bottom: 110px;
     }
   }
   .slide6 {
