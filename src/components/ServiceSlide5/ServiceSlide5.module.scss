@@ -1,0 +1,131 @@
+@import "../../globalStyles/component.scss";
+
+.ServiceSlide5 {
+  width: 100%;
+  height: fit-content;
+  padding-block: 135px;
+
+  .main {
+    width: 100%;
+    height: fit-content;
+    padding-left: 8.6%;
+    padding-right: 10%;
+
+    .upper {
+      width: 100%;
+      height: fit-content;
+      padding-inline: 5.6%;
+
+      .title {
+        color: $black2;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+      }
+      .desc {
+        color: $gray3;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        text-transform: capitalize;
+        margin-bottom: 98px;
+      }
+      .btnContainer {
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 34px;
+        flex-wrap: wrap;
+        gap: 10px;
+        .btn {
+          font-family: $font-primary;
+          font-weight: 400;
+        }
+        @media (max-width: 750px) {
+          flex-direction: column;
+          justify-content: unset;
+          row-gap: 14px;
+        }
+      }
+    }
+    .box {
+      width: 100%;
+      height: fit-content;
+      padding-inline: 7.5%;
+      padding-block: 65px;
+      border-radius: 12px;
+      background: #f2f5f9;
+      .con1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+        height: fit-content;
+        .desc {
+          width: 46%;
+          color: #42454a;
+          font-family: $font-primary;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 32px; /* 133.333% */
+
+          @media (max-width: 750px) {
+            width: 100%;
+          }
+        }
+        .btn {
+          background: #b8bec7;
+          color: $white;
+        }
+        @media (max-width: 750px) {
+          padding-inline: 11px;
+          flex-direction: column;
+          row-gap: 14px;
+          align-items: unset;
+        }
+      }
+      .row1 {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: stretch;
+        column-gap: 14px;
+        margin-bottom: 14px;
+        @media (max-width: 750px) {
+          flex-direction: column;
+          row-gap: 14px;
+        }
+      }
+      .row2 {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: stretch;
+        gap: 14px;
+        @media (max-width: 750px) {
+          flex-direction: column;
+          row-gap: 14px;
+        }
+      }
+      @media (max-width: 750px) {
+        padding-left: 19px;
+        padding-right: 16px;
+      }
+    }
+    @media (max-width: 750px) {
+      padding-inline: 0;
+    }
+  }
+}

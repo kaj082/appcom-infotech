@@ -1,0 +1,92 @@
+@import "../../globalStyles/component.scss";
+
+.AboutSlide4 {
+  width: 100%;
+  height: 668px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 4;
+  overflow: hidden;
+  margin-bottom: 151px;
+  .bg1 {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: 450px) {
+        transform: translateX(-30%);
+        width: auto;
+      }
+    }
+  }
+
+  .bg {
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.78%, #000 113.55%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .detail {
+    z-index: 4;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 78px;
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 6.1%;
+
+    .title {
+      padding-left: 30px;
+      max-width: 555px;
+      color: $white;
+      font-family: $font-primary;
+      font-size: min(44px, 4vw);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 112.893%;
+      text-transform: capitalize;
+      border-left: 1px solid $white;
+      @media (max-width: 750px) {
+        font-size: 44px;
+        width: 100%;
+        max-width: unset;
+      }
+    }
+
+    .btn {
+      background-color: $white;
+      color: $black1;
+      @media (max-width: 750px) {
+        width: 100%;
+        padding-inline: 0;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 750px) {
+      width: 100%;
+      padding-inline: 18px;
+      padding-top: 47px;
+      padding-bottom: 33px;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin-bottom: 0;
+    }
+  }
+}

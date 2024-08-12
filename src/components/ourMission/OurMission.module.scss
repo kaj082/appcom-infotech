@@ -1,0 +1,115 @@
+@import "../../globalStyles/component.scss";
+
+.OurMission {
+  width: 100%;
+  height: fit-content;
+  min-height: 423px;
+  padding-inline: 8.9%;
+  margin-bottom: 120px;
+  position: relative;
+
+  .box {
+    width: 100%;
+    height: fit-content;
+    background-color: $blue1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-inline: 6.7%;
+    padding-top: 55px;
+    padding-bottom: 79px;
+    z-index: 2;
+    overflow: hidden;
+
+    .bg {
+      position: absolute;
+      top: 0vh;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      overflow: hidden;
+      z-index: 1;
+      img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        @media (max-width: 750px) {
+          width: 100%;
+        }
+        @media (max-width: 750px) {
+          // width: 100%;
+        }
+      }
+      @media (max-width: 900px) {
+        top: 12vh;
+      }
+      @media (max-width: 750px) {
+        top: 9vh;
+      }
+    }
+    .details {
+      z-index: 23;
+      .title {
+        color: $white;
+        font-family: $font-secondary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        text-transform: uppercase;
+        margin-bottom: 65px;
+      }
+      .description {
+        color: $white2;
+        font-family: $font-primary;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        @media (max-width: 750px) {
+          font-size: 30px;
+        }
+      }
+    }
+    .imageContainer {
+      z-index: 23;
+      width: 248px;
+      height: fit-content;
+
+      @media (max-width: 750px) {
+        position: absolute;
+        bottom: -71px;
+      }
+    }
+    @media (max-width: 750px) {
+      flex-direction: column;
+      padding-inline: 0;
+      padding-left: 26px;
+      padding-right: 17px;
+      padding-bottom: 27vh;
+      overflow: visible;
+    }
+    @media (max-width: 400px) {
+      padding-bottom: 35vh;
+    }
+    .rec {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 73.61px;
+      height: 73.61px;
+      transform: rotate(45deg);
+      background-color: $white;
+      z-index: 23;
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding-inline: 0;
+    min-height: unset;
+  }
+}

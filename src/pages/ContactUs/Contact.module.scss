@@ -1,0 +1,11 @@
+.Contact {
+  width: 100%;
+  height: fit-content;
+
+  .contactus {
+    display: none;
+    @media (max-width: 750px) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../globalStyles/component.scss";
+.ButtonType2 {
+  all: unset;
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 26px;
+  padding-block: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  color: $white;
+  text-align: right;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  background-color: $blue1;
+  text-wrap: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.active {
+  all: unset;
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 26px;
+  padding-block: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  color: #909090;
+  text-align: right;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  background-color: transparent;
+  text-wrap: nowrap;
+
+  &:hover {
+    padding-inline: 26px;
+    padding-block: 16px;
+
+    cursor: pointer;
+    color: $white;
+    background-color: $blue1;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../globalStyles/component.scss";
+
+.DetailWithImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 6.25%;
+  padding-inline: 5.8%;
+  width: 100%;
+  margin-bottom: 142px;
+
+  .details {
+    width: 37.7%;
+    height: fit-content;
+
+    .title {
+      color: $blue1;
+      font-family: $font-secondary;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      text-transform: uppercase;
+      margin-bottom: 22px;
+
+      @media (max-width: 750px) {
+        margin-top: 12px;
+      }
+    }
+    .subTitle {
+      margin-bottom: 14px;
+      color: $gray1;
+      font-family: $font-primary;
+      font-size: 2.5vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      @media (max-width: 1150px) {
+        font-size: 3.5vw;
+      }
+      @media (max-width: 750px) {
+        font-size: 40px;
+      }
+    }
+    .desc {
+      margin-bottom: 24px;
+      color: $gray3;
+      font-family: $font-primary;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      text-transform: capitalize;
+    }
+    .btn {
+      width: fit-content;
+      display: flex;
+      padding: 16px 26px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      border: 1.2px solid $blue1;
+      color: $blue1;
+      text-align: right;
+      font-family: $font-secondary;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      background-color: $white;
+      &:hover {
+        background-color: $blue1;
+        color: $white;
+      }
+
+      @media (max-width: 750px) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    @media (max-width: 1150px) {
+      width: 50%;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      padding-inline: 10px;
+      // padding-bottom: 20vh;
+    }
+  }
+  .imageContainer {
+    width: 43.4%;
+    height: fit-content;
+
+    .image {
+      width: 100%;
+      height: fit-content;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+  .typeContent1 {
+    width: 42%;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+  .typeContent2 {
+    width: 42%;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column-reverse;
+    padding-inline: 0;
+  }
+}

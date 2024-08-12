@@ -1,0 +1,33 @@
+.box1 {
+  width: 100%;
+  position: relative;
+
+  .slider {
+    width: 100%;
+
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slick-slide > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px; // Fixed width for slides
+      margin-right: 200px; // Gap between slides
+    }
+
+    .slick-slide:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 750px) {
+    display: none;
+    .slider {
+      display: none;
+    }
+  }
+}

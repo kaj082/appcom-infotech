@@ -1,0 +1,96 @@
+@import "../../globalStyles/component.scss";
+
+.SideMenu {
+  z-index: 30;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $white;
+  border-radius: 0px 0px 24px 24px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+
+  .navbar {
+    width: 100%;
+    height: 82px;
+    margin-bottom: 70px;
+    padding-left: 27px;
+    padding-right: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $white1;
+
+    .crossIcon {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .listItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-left: 16%;
+    list-style: none;
+
+    .item {
+      all: unset;
+      color: #474747;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 166.667% */
+      font-family: $font-secondary;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+    margin-top: 132px;
+
+    .iconList {
+      margin-bottom: 27px;
+      margin-top: 47px;
+
+      svg {
+        path {
+          fill: #474747;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .copyText {
+      color: #474747;
+      text-align: center;
+      font-family: $font-secondary;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 162.5% */
+    }
+  }
+}
+
+.visible {
+  transform: translateX(0%);
+}

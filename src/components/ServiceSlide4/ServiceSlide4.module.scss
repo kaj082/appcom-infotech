@@ -1,0 +1,93 @@
+@import "../../globalStyles/component.scss";
+
+.ServiceSlide4 {
+  width: 100%;
+  height: fit-content;
+  padding-top: 60px;
+  padding-bottom: 116px;
+  background-color: $blue1;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+
+  .bg {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
+
+    .image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+  .main {
+    z-index: 3;
+    position: relative;
+    padding-left: 5.9%;
+    width: 100%;
+    height: fit-content;
+
+    .titleContainer {
+      width: 100%;
+      padding-right: 5.9%;
+      padding-left: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+
+      .title {
+        color: $white;
+        font-family: $font-primary;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .btn {
+        width: 190px;
+        background-color: $white;
+        color: $black1;
+        justify-content: center;
+        @media (max-width: 750px) {
+          display: none;
+        }
+      }
+      @media (max-width: 750px) {
+        padding-inline: 0;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .box {
+      width: 100%;
+      display: flex;
+      column-gap: 24px;
+      overflow-x: scroll;
+      &:-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+
+      @media (max-width: 750px) {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 16px;
+      }
+    }
+    @media (max-width: 750px) {
+      padding-inline: 7px;
+    }
+  }
+}
