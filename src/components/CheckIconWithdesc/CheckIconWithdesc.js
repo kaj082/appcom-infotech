@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./CheckIconWithdesc.module.scss";
 import { Check } from "../../icons";
+import cx from "classnames";
 
-const CheckIconWithdesc = ({ desc }) => {
+const CheckIconWithdesc = ({ desc, className }) => {
   return (
-    <div className={styles.CheckIconWithdesc}>
+    <div className={cx(styles.CheckIconWithdesc, className)}>
       <div className={styles.check}>
         <Check />
       </div>

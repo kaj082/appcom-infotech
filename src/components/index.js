@@ -18,7 +18,6 @@ import AboutSlide3 from "./AboutSlide3/AboutSlide3";
 import AboutSlide4 from "./AboutSlide4/AboutSlide4";
 import ContactUs from "./ContactUs/ContactUs";
 import ServiceSlide1 from "./ServiceSlide1/ServiceSlide1";
-import IconWithDesc from "./IconWithDesc/IconWithDesc";
 import CheckIconWithdesc from "./CheckIconWithdesc/CheckIconWithdesc";
 import ServiceSlide2 from "./ServiceSlide2/ServiceSlide2";
 import ServiceSlide3 from "./ServiceSlide3/ServiceSlide3";
@@ -28,6 +27,7 @@ import ButtonType2 from "./buttontype2/ButtonType2";
 import HomeSlider from "./HomeSlider/HomeSlider";
 import ServicesBox from "./ServicesBox/ServicesBox";
 import ServiceSlider from "./ServiceSlider/ServiceSlider";
+import IconWithDesc from "./IconWithDesc/IconWithDesc";
 
 export {
   Button,

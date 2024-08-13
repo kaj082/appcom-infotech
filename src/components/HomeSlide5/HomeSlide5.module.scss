@@ -96,9 +96,6 @@
         height: fit-content;
         height: fit-content;
         object-fit: contain;
-        &:hover {
-          scale: 1.06;
-        }
       }
       .title {
         position: absolute;
@@ -116,8 +113,37 @@
           font-size: 32px;
         }
       }
+      .box {
+        transition: all 0.2 ease-in-out;
+        padding-inline: 16.5px;
+        width: 100%;
+        top: 7px;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+
+        background-color: #d82229;
+        transform: translateY(-10px);
+
+        .singleItem {
+          border-bottom: 1px solid #ff9473;
+        }
+        display: none;
+      }
       &:hover {
         cursor: pointer;
+      }
+    }
+    &:hover {
+      justify-content: center;
+      .box {
+        display: flex;
+        justify-content: center;
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
     @media (max-width: 750px) {
@@ -155,8 +181,9 @@
       text-transform: capitalize;
       &:hover {
         cursor: pointer;
-        color: $blue1;
-        background-color: $white;
+        color: $white;
+        background-color: $blue1;
+        border: 1px solid $blue1;
       }
 
       @media (max-width: 750px) {

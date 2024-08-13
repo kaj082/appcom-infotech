@@ -10,6 +10,7 @@ import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
 import Button from "../button/Button";
 import IconWithDesc from "../IconWithDesc/IconWithDesc";
 import bg from "../../assets/service2.png";
+import { contentofServiceSlide2 } from "../../contants/dummy";
 
 const ServiceSlide2 = () => {
   const images = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
@@ -20,15 +21,12 @@ const ServiceSlide2 = () => {
     "HPC System Management and Support",
     "HPC Training and Education",
   ];
-  const desc = [
-    "Customized solution design based on specific requirements.",
-    "Performance optimization and workload analysis",
-    "Architecture planning and system integration",
-  ];
+
   const [active, setActive] = useState(0);
   const handleClick = (index) => {
     setActive(index);
   };
+
   return (
     <div className={styles.ServiceSlide2}>
       <div className={styles.bg}>
@@ -58,18 +56,17 @@ const ServiceSlide2 = () => {
                 desc={item}
                 onClick={() => handleClick(index)}
                 isActive={index === active}
+                key={index}
               />
             ))}
           </div>
           <div className={styles.right}>
             <p className={styles.desc}>
-              We provide expert HPC consulting services to help you design and
-              implement high-performance computing solutions that meet your
-              specific needs. Our services include:
+              {contentofServiceSlide2[active].title}
             </p>
             <div className={styles.box}>
-              {desc.map((item) => (
-                <CheckIconWithdesc desc={item} />
+              {contentofServiceSlide2[active].desc.map((item, index) => (
+                <CheckIconWithdesc desc={item} key={index} />
               ))}
             </div>
             <Button className={styles.btn}>Learn more</Button>

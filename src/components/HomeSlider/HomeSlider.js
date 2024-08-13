@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
-import hs1 from "../../assets/slide1.png";
-import hs2 from "../../assets/slide12.png";
-import hs3 from "../../assets/slide13.png";
+import hs1 from "../../assets/slide1.webm";
+import hs2 from "../../assets/slide12.mp4";
+import hs3 from "../../assets/slide13.mp4";
 import styles from "./HomeSlider.module.scss";
 import { Dot } from "../../icons";
 
@@ -30,10 +30,12 @@ const HomeSlider = () => {
       <Slider ref={sliderRef} {...settings} className={styles.slider}>
         {data.map((image, index) => (
           <div key={index} className={styles.slide}>
-            <img
+            <video
               className={styles.image}
               src={image}
               alt={`Slide ${index + 1}`}
+              muted
+              autoPlay
             />
           </div>
         ))}
