@@ -70,6 +70,11 @@
     .btn {
       background-color: $white;
       color: $black1;
+
+      &:hover {
+        background-color: $blue1;
+        color: $white;
+      }
       @media (max-width: 750px) {
         width: 100%;
         padding-inline: 0;
