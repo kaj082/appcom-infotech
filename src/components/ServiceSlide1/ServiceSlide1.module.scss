@@ -80,8 +80,8 @@
         text-transform: capitalize;
         background-color: $white;
         &:hover {
-          background-color: $blue1;
-          color: $white;
+          background-color: $white;
+          color: $blue1;
         }
 
         @media (max-width: 750px) {

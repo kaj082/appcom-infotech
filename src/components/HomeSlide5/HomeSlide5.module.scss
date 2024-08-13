@@ -96,6 +96,9 @@
         height: fit-content;
         height: fit-content;
         object-fit: contain;
+        &:hover {
+          scale: 1.06;
+        }
       }
       .title {
         position: absolute;
