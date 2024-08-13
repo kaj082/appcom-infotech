@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./HomeSlide5.module.scss";
-import Circle from "../../icons/Circle";
 import box1 from "../../assets/hsol1.png";
 import box2 from "../../assets/hsol2.png";
 import box3 from "../../assets/hsol3.png";
