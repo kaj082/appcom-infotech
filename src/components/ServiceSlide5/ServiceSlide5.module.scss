@@ -88,6 +88,9 @@
         .btn {
           background: #b8bec7;
           color: $white;
+          &:hover {
+            background-color: #42454a;
+          }
         }
         @media (max-width: 750px) {
           padding-inline: 11px;

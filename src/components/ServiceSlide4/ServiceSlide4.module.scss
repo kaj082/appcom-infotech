@@ -71,7 +71,23 @@
     }
     .box {
       width: 100%;
-      display: flex;
+      height: fit-content;
+      // display: flex;
+      // column-gap: 24px;
+      // overflow-x: scroll;
+      // &:-webkit-scrollbar {
+      //   display: none;
+      // }
+      // -ms-overflow-style: none; /* IE and Edge */
+      // scrollbar-width: none; /* Firefox */
+
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    .box1 {
+      width: 100%;
+      display: none;
       column-gap: 24px;
       overflow-x: scroll;
       &:-webkit-scrollbar {
@@ -81,6 +97,7 @@
       scrollbar-width: none; /* Firefox */
 
       @media (max-width: 750px) {
+        display: flex;
         flex-direction: column;
         column-gap: 0;
         row-gap: 16px;

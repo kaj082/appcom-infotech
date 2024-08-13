@@ -70,7 +70,15 @@
         text-transform: capitalize;
       }
       &:hover {
-        cursor: pointer;
+        .btnText {
+          cursor: pointer;
+          color: $blue1;
+        }
+        svg {
+          path {
+            stroke: $blue1;
+          }
+        }
       }
     }
 

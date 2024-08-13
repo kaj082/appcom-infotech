@@ -26,9 +26,9 @@ const HomeSlide5 = () => {
       <div className={styles.bg}>
         <img src={bg} alt="backgroud" className={styles.image} />
       </div>
-      <div className={styles.rec}>
+      {/* <div className={styles.rec}>
         <Circle />
-      </div>
+      </div> */}
       <div className={styles.upperDiv}>
         <h6 className={styles.title}>Comprehensive IT Solutions</h6>
         <p className={styles.desc}>

@@ -5,6 +5,7 @@ import { ArrowRight } from "../../icons";
 import bg from "../../assets/sslide5.png";
 import ServicesBox from "../ServicesBox/ServicesBox";
 import { serviceslide5Data } from "../../contants/dummy";
+import ServiceSlider from "../ServiceSlider/ServiceSlider";
 
 const ServiceSlide4 = () => {
   return (
@@ -19,7 +20,11 @@ const ServiceSlide4 = () => {
             Next
           </Button>
         </div>
+
         <div className={styles.box}>
+          <ServiceSlider />
+        </div>
+        <div className={styles.box1}>
           {serviceslide5Data.map((item, index) => (
             <ServicesBox
               data={item.data}

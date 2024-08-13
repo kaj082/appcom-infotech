@@ -18,7 +18,7 @@ const HomeSlide6 = () => {
         </Button>
       </div>
       <div className={styles.row1}>
-        <Achievemnets />
+        <Achievemnets type={true} />
         <Achievemnets type={true} />
         <Achievemnets type={true} />
       </div>
