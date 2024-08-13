@@ -9,6 +9,7 @@ import Award from "./Award";
 import Check from "./Check";
 import ArrowLeft from "./ArrowLeft";
 import Dot from "./Dot";
+import LeftIcon from "./leftIcon";
 
 export {
   Logo,
@@ -22,4 +23,5 @@ export {
   Check,
   ArrowLeft,
   Dot,
+  LeftIcon,
 };

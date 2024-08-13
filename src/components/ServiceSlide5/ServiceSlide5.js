@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ServiceSlide5.module.scss";
 import Button from "../button/Button";
 import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
 import ButtonType2 from "../buttontype2/ButtonType2";
+import { descriptionsServiceSlide4 } from "../../contants/dummy";
 
 const ServiceSlide5 = () => {
-  // const [active, setActive] = useState(0);
-  const active = 0;
+  const [active, setActive] = useState(0);
+
+  const handleChange = (index) => {
+    console.log("Button clicked, setting active to:", index); // Debugging
+    setActive(index);
+  };
+
   const buttons = [
     "Workstation AMC",
     "Server AMC",
@@ -14,6 +20,7 @@ const ServiceSlide5 = () => {
     "HPC AMC",
     "Datacentre AMC",
   ];
+
   return (
     <div className={styles.ServiceSlide5}>
       <div className={styles.main}>
@@ -26,7 +33,13 @@ const ServiceSlide5 = () => {
           </p>
           <div className={styles.btnContainer}>
             {buttons.map((item, index) => (
-              <ButtonType2 active={active !== index}>{item}</ButtonType2>
+              <ButtonType2
+                key={index}
+                active={active !== index} // Check if the button is active
+                onClick={() => handleChange(index)} // Correctly pass index to handler
+              >
+                {item}
+              </ButtonType2>
             ))}
           </div>
         </div>
@@ -40,28 +53,13 @@ const ServiceSlide5 = () => {
             <Button className={styles.btn}>Learn more</Button>
           </div>
           <div className={styles.row1}>
-            <CheckIconWithdesc
-              desc={
-                "Hardware Maintenance: Regular maintenance and troubleshooting workstations of various OEM like Dell, Lenovo, HP, Fujitsu, Supermicro, Tyrone, and many more Make in India OEM."
-              }
-            />
-            <CheckIconWithdesc
-              desc={
-                "Software Updates: Ensuring that operating systems, drivers, and software applications are up to date and properly functioning"
-              }
-            />
-          </div>
-          <div className={styles.row2}>
-            <CheckIconWithdesc
-              desc={
-                "Virus Protection: Implementing and managing robust antivirus solutions to safeguard workstations against malware and security threats."
-              }
-            />
-            <CheckIconWithdesc
-              desc={
-                "Help Desk Support: Prompt assistance and remote troubleshooting to address user queries and technical issues."
-              }
-            />
+            {descriptionsServiceSlide4[active]?.map((item, idx) => (
+              <CheckIconWithdesc
+                key={`${item}idx`}
+                desc={item}
+                className={styles.rowItem}
+              />
+            ))}
           </div>
         </div>
       </div>

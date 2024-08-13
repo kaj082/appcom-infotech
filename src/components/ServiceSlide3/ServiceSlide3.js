@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../../assets/sslide4.png";
-import small from "../../assets/sslide4small.png";
+import small from "../../assets/sslide4small.gif";
 import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
 import styles from "./ServiceSlide3.module.scss";
 import Button from "../button/Button";

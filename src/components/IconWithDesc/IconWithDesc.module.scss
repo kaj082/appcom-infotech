@@ -32,9 +32,9 @@
   padding-top: 10px;
   padding-inline: 10px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #e4e4e4;
+  // border-bottom: 1px solid #e4e4e4;
   .desc {
-    color: #1c1c1c;
+    color: #0075ff;
     font-family: $font-primary;
     font-size: 18px;
     font-style: normal;
@@ -43,7 +43,7 @@
   }
   svg {
     path {
-      stroke: #1c1c1c;
+      stroke: #0075ff;
     }
   }
 }
