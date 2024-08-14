@@ -21,7 +21,7 @@ const OurMission = () => {
         <div className={styles.imageContainer}>
           <img src={group} alt="group" />
         </div>
-        {/* <div className={styles.rec}></div> */}
+        <div className={styles.rec}></div>
       </div>
     </div>
   );
