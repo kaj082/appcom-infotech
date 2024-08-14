@@ -98,7 +98,9 @@
       position: absolute;
       left: -10%;
       bottom: -80px;
-      .image {
+      .image1 {
+        width: 100%;
+        height: fit-content;
         img {
           width: 100%;
           height: auto;

@@ -11,11 +11,14 @@
   justify-content: space-between;
   background-color: $blue1;
   height: 299px;
+  position: relative;
+
   .upper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .title {
       background-color: #257afe;
       padding: 5px 10px;
@@ -24,14 +27,16 @@
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 24px; /* 171.429% */
+      line-height: 24px;
       text-transform: capitalize;
+
       @media (max-width: 750px) {
         font-size: 11px;
         line-height: 19px;
       }
     }
   }
+
   .desc {
     padding-left: 7px;
     color: $white;
@@ -41,28 +46,49 @@
     font-weight: 300;
     line-height: 141.667%;
     text-transform: capitalize;
-    @media (max-width: 750px) {
-      font-size: 19px;
-      line-height: 27px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hovered {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  &:hover {
+    .desc {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    .desc.hovered {
+      opacity: 1;
+      // transform: translateY(0);
+      transform: translateY(-10px);
     }
   }
 }
+
 .type {
   padding-top: 19px;
   padding-bottom: 38px;
   padding-right: 19px;
   padding-left: 23px;
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $blue3;
   height: 299px;
+  position: relative;
+
   .upper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .title {
       background-color: #d5dff0;
       padding: 5px 10px;
@@ -71,61 +97,50 @@
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 24px; /* 171.429% */
-      text-transform: capitalize;
+      line-height: 24px;
+
       @media (max-width: 750px) {
         font-size: 11px;
         line-height: 19px;
       }
     }
+
     svg {
       path {
         stroke: #d5dff0;
       }
     }
   }
+
   .desc {
-    padding-left: 7px;
     color: $gray7;
-    font-family: $font-primary;
-    font-size: min(24px, 2vw);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 141.667%;
-    text-transform: capitalize;
-    @media (max-width: 750px) {
-      font-size: 19px;
-      line-height: 27px;
+    transition: all 0.3 ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      color: $white;
     }
   }
 
   &:hover {
     cursor: pointer;
     background-color: $blue1;
+
     .upper {
       .title {
         background-color: #257afe;
         color: $blue2;
       }
+
       svg {
         path {
           stroke: #d5dff0;
         }
       }
     }
+
     .desc {
       color: $white;
     }
-  }
-}
-
-@media (max-width: 750px) {
-  .Achievemnets,
-  .type {
-    padding-left: 18px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 31px;
-    height: 243px;
   }
 }

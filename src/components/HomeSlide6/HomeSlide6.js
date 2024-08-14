@@ -18,13 +18,28 @@ const HomeSlide6 = () => {
         </Button>
       </div>
       <div className={styles.row1}>
-        <Achievemnets type={true} />
-        <Achievemnets type={true} />
-        <Achievemnets type={true} />
+        <Achievemnets
+          desc={"ranked 14th in Top 100 Supercomputers of India...."}
+          type={true}
+        />
+        <Achievemnets
+          type={true}
+          desc={"Comprehensive AMC services for a 100TF HPC system."}
+        />
+        <Achievemnets
+          type={true}
+          desc={"Management of DC and DR infrastructure ..."}
+        />
       </div>
       <div className={styles.row2}>
-        <Achievemnets type={true} />
-        <Achievemnets type={true} />
+        <Achievemnets
+          type={true}
+          desc={"AMC for over 1500 high-end servers..."}
+        />
+        <Achievemnets
+          type={true}
+          desc={"Implementation of multi-petabyte NetApp FAS..."}
+        />
       </div>
       <Button prefixIcon={<ArrowRight />} className={styles.btn1}>
         View Our Success Stories

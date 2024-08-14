@@ -129,6 +129,20 @@
 
         .singleItem {
           border-bottom: 1px solid #ff9473;
+
+          svg {
+            path {
+              stroke: $white;
+            }
+          }
+
+          @media (max-width: 850px) {
+            padding-top: 0;
+            padding-bottom: 5px;
+          }
+        }
+        .text {
+          font-size: min(18px, 1.2vw);
         }
         display: none;
       }
@@ -154,6 +168,7 @@
       margin-top: 35px;
     }
   }
+
   .con {
     width: 100%;
     padding-inline: 5.6%;
@@ -181,9 +196,8 @@
       text-transform: capitalize;
       &:hover {
         cursor: pointer;
-        color: $white;
-        background-color: $blue1;
-        border: 1px solid $blue1;
+        color: $blue1;
+        background-color: $white;
       }
 
       @media (max-width: 750px) {

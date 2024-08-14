@@ -17,6 +17,7 @@ const HomeSlide5 = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
+
   const imageTitle = [
     {
       image: box1,
@@ -31,14 +32,12 @@ const HomeSlide5 = () => {
       title: "HPC Software and Application Support",
     },
   ];
+
   return (
     <div className={styles.HomeSlide5}>
       <div className={styles.bg}>
-        <img src={bg} alt="backgroud" className={styles.image} />
+        <img src={bg} alt="background" className={styles.image} />
       </div>
-      {/* <div className={styles.rec}>
-        <Circle />
-      </div> */}
       <div className={styles.upperDiv}>
         <h6 className={styles.title}>Comprehensive IT Solutions</h6>
         <p className={styles.desc}>
@@ -50,13 +49,12 @@ const HomeSlide5 = () => {
         {imageTitle.map((item, index) => (
           <div
             className={styles.imageContainer}
-            key={`${item.title}index`}
+            key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <img src={item.image} alt="" className={styles.image} />
+            <img src={item.image} alt={item.title} className={styles.image} />
             <p className={styles.title}>{item.title}</p>
-
             {hoveredIndex === index && (
               <div className={styles.box}>
                 <IconWithDesc
@@ -64,18 +62,21 @@ const HomeSlide5 = () => {
                   textColor={"#ffff"}
                   icon={<LeftIcon />}
                   className={styles.singleItem}
+                  textClassName={styles.text}
                 />
                 <IconWithDesc
                   desc={"Performance optimization and workload analysis"}
                   textColor={"#ffff"}
                   icon={<LeftIcon />}
                   className={styles.singleItem}
+                  textClassName={styles.text}
                 />
                 <IconWithDesc
                   desc={"Architecture planning and system integration"}
                   textColor={"#ffff"}
                   icon={<LeftIcon />}
                   className={styles.singleItem}
+                  textClassName={styles.text}
                 />
               </div>
             )}

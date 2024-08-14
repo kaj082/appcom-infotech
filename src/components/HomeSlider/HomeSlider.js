@@ -16,7 +16,7 @@ const HomeSlider = () => {
     infinite: true,
     speed: 1000,
     autoplaySpeed: 1000,
-    autoplay: true,
+    autoplay: false,
     fade: false,
     cssEase: "linear",
     arrows: false,

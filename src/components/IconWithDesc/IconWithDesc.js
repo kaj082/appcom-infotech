@@ -4,7 +4,8 @@ import styles from "./IconWithDesc.module.scss";
 import cx from "classnames";
 
 const IconWithDesc = (props) => {
-  const { isActive, desc, onClick, icon, textColor, className } = props;
+  const { isActive, desc, onClick, icon, textColor, className, textClassName } =
+    props;
   return (
     <div
       className={cx(styles.IconWithDesc, className, {
@@ -13,7 +14,7 @@ const IconWithDesc = (props) => {
       onClick={onClick}
     >
       <p
-        className={styles.desc}
+        className={cx(styles.desc, textClassName)}
         style={{
           color: textColor,
         }}

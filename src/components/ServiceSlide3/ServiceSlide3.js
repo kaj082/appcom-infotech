@@ -30,7 +30,7 @@ const ServiceSlide3 = () => {
       <div className={styles.imageContainer}>
         <img src={image} alt="description" className={styles.image} />
         <div className={styles.small}>
-          <img src={small} alt="" className={styles.image} />
+          <img src={small} alt="" className={styles.image1} />
         </div>
       </div>
     </div>
