@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./HomeSlide3.module.scss";
 import { ArrowRight } from "../../icons";
 import bg from "../../assets/rectbg.png";
+import backgroundImg from "../../assets/slide5.png"; // Import the background image
 
 const HomeSlide3 = () => {
   return (
@@ -28,6 +29,12 @@ const HomeSlide3 = () => {
           <img src={bg} alt="" className={styles.image} />
         </div>
       </div>
+      {/* New image element for mobile view */}
+      <img
+        src={backgroundImg}
+        alt="Background"
+        className={styles.mobileBgImage}
+      />
     </div>
   );
 };

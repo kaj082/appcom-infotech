@@ -39,16 +39,23 @@
 
   .desc {
     padding-left: 7px;
-    color: $white;
+    color: #1d1d1d;
     font-family: $font-primary;
     font-size: min(24px, 2vw);
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 141.667%;
     text-transform: capitalize;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 1;
     transform: translateY(0);
+
+    @media (max-width: 750px) {
+      font-size: 19.58px;
+      font-weight: 500;
+      line-height: 27.74px;
+      text-align: left;
+    }
   }
 
   .hovered {
@@ -60,6 +67,7 @@
     .desc {
       opacity: 0;
       transform: translateY(-10px);
+      font-weight: 300;
     }
 
     .desc.hovered {
@@ -100,8 +108,8 @@
       line-height: 24px;
 
       @media (max-width: 750px) {
-        font-size: 11px;
-        line-height: 19px;
+        // font-size: 11px;
+        // line-height: 19px;
       }
     }
 

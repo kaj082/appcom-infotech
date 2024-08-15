@@ -9,21 +9,19 @@
   align-items: center;
   justify-content: flex-end;
   height: 674px;
-  background: url("../../assets/hslide4.png") lightgray 50% / cover no-repeat;
+  background: url("../../assets/hslide4.png") lightgray 50% / cover no-repeat; /* Default background */
 
   .box {
     width: 658px;
     padding-left: 73px;
     padding-right: 86px;
     padding-block: 58px;
-    // background-color: $white;
     position: relative;
     z-index: 4;
 
     .title {
       position: relative;
       z-index: 4;
-      //   width: 45.6%;
       color: $gray1;
       font-family: $font-primary;
       font-size: min(40px, 3.4vw);
@@ -39,7 +37,6 @@
     .desc {
       position: relative;
       z-index: 4;
-      //   width: 45.6%;
       margin-bottom: 12px;
       color: $gray3;
       font-family: $font-primary;
@@ -99,8 +96,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      //   bottom: -16px;
-      //   right: -18px;
       background-color: $white;
       z-index: 1;
       width: 658px;
@@ -129,16 +124,33 @@
       padding-inline: 26px;
       height: fit-content;
       margin-top: -1px;
+      padding-bottom: 20px;
     }
   }
+  .mobileBgImage {
+    display: none;
+  }
 
+  // Hide background and show image on mobile
   @media (max-width: 750px) {
+    background: none; /* Remove background image */
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
     padding-right: 0;
+    flex-direction: column;
     justify-content: center;
     align-items: unset;
-    height: 885px;
+    height: fit-content;
+
+    .mobileBgImage {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 20px;
+    }
   }
+
+  // Hide the mobile image by default
 }
