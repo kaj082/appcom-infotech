@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const navlink = [
     {
+      to: "/",
+      title: "Home",
+    },
+    {
       to: "/about",
       title: "About",
     },
@@ -13,17 +17,10 @@ const Footer = () => {
       to: "/services",
       title: "services",
     },
-    {
-      to: "/",
-      title: "Works",
-    },
+
     {
       to: "/contact-us",
-      title: "Support",
-    },
-    {
-      to: "/contact-us",
-      title: "Help",
+      title: "Contact Us",
     },
   ];
   return (
