@@ -7,7 +7,7 @@ import { checkMobile } from "../../helper/generalHelper";
 //
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Logo, MobileLogo } from "../../icons";
+import { MobileLogo } from "../../icons";
 gsap.registerPlugin(ScrollTrigger);
 
 const PrimaryLayout = ({ children }) => {

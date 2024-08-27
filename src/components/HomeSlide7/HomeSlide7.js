@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./HomeSlide7.module.scss";
 import image from "../../assets/slide7.png";
 import Button from "../button/Button";
-import emailjs from "emailjs-com";
 
 const HomeSlide7 = () => {
   const [name, setName] = useState("");
@@ -12,11 +11,11 @@ const HomeSlide7 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      name,
-      email,
-      message,
-    };
+    // const templateParams = {
+    //   name,
+    //   email,
+    //   message,
+    // };
 
     // emailjs
     //   .send(
