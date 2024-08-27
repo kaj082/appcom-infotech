@@ -21,6 +21,11 @@ const HomeSlide4 = () => {
       desc1: "Extra Growth Revenue",
       desc2: "From your sales",
     },
+    {
+      title: "19%",
+      desc1: "Extra Growth Revenue",
+      desc2: "From your sales",
+    },
   ];
   return (
     <div className={styles.HomeSlide4}>

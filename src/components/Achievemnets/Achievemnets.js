@@ -17,9 +17,7 @@ const Achievemnets = ({ type = false, desc, hoverDesc }) => {
         <Award />
       </div>
       <p className={cx(styles.desc, { [styles.hovered]: isHovered })}>
-        {isHovered
-          ? "Supply, Installation, and Maintenance of 1PF HPC at PRL, Ahmedabad, ranked 14th in Top 100 Supercomputers of India."
-          : desc}
+        {isHovered ? hoverDesc : desc}
       </p>
     </div>
   );

@@ -28,6 +28,7 @@ import HomeSlider from "./HomeSlider/HomeSlider";
 import ServicesBox from "./ServicesBox/ServicesBox";
 import ServiceSlider from "./ServiceSlider/ServiceSlider";
 import IconWithDesc from "./IconWithDesc/IconWithDesc";
+import Loader from "./Loader/Loader";
 
 export {
   Button,
@@ -60,4 +61,5 @@ export {
   HomeSlider,
   ServicesBox,
   ServiceSlider,
+  Loader,
 };

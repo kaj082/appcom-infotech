@@ -25,7 +25,7 @@ const Home = () => {
           data={homeslide1Data}
           className={styles.slide1}
         />
-        <OurMission />
+        <OurMission className={styles.slide2} />
         <HomeSlide3 />
         <HomeSlide4 />
         <HomeSlide5 />

@@ -4,6 +4,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { routerConstant } from "./contants";
+import { Loader } from "./components";
 
 // Lazily load other pages
 const AboutPage = lazy(() => import("./pages/AboutUs/About"));
@@ -13,7 +14,7 @@ const HomePage = lazy(() => import("./pages/Home/Home"));
 
 const App = () => (
   <ErrorBoundary>
-    <Suspense>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path={routerConstant.ROUTES.HOME} element={<HomePage />} />
         <Route path={routerConstant.ROUTES.ABOUT} element={<AboutPage />} />

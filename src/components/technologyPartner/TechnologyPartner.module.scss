@@ -1,78 +1,94 @@
+// .TechnologyPartner {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+
+//   .row1 {
+//     margin-bottom: 26px;
+//     width: 100%;
+//     display: flex;
+//     column-gap: min(1.6%, 24px);
+//     justify-content: flex-start;
+
+//     .image {
+//       // box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+//       height: fit-content;
+//       object-fit: cover;
+//     }
+//     @media (max-width: 1050px) {
+//       width: 100%;
+//       .image {
+//         width: 107px;
+//       }
+//     }
+//     @media (max-width: 750px) {
+//       width: 100%;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+
+//   // .row2 {
+//   //   margin-bottom: 26px;
+//   //   display: flex;
+//   //   column-gap: min(1.6%, 24px);
+//   //   justify-content: center;
+
+//   //   .image {
+//   //     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+//   //     // width: 100%;
+//   //     height: fit-content;
+//   //     object-fit: cover;
+//   //   }
+//   //   @media (max-width: 1050px) {
+//   //     width: 100%;
+//   //     .image {
+//   //       width: 107px;
+//   //     }
+//   //   }
+//   //   @media (max-width: 750px) {
+//   //     width: 100%;
+//   //     justify-content: center;
+//   //     align-items: center;
+//   //   }
+//   // }
+
+//   // .row3 {
+//   //   display: flex;
+//   //   justify-content: flex-end;
+//   //   column-gap: min(1.6%, 24px);
+
+//   //   .image {
+//   //     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+//   //     height: fit-content;
+//   //     object-fit: cover;
+//   //   }
+//   //   @media (max-width: 1050px) {
+//   //     width: 100%;
+//   //     .image {
+//   //       width: 107px;
+//   //     }
+//   //   }
+//   //   @media (max-width: 750px) {
+//   //     width: 100%;
+//   //     justify-content: center;
+//   //     align-items: center;
+//   //   }
+//   // }
+// }
 .TechnologyPartner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 images per row by default
+  gap: 26px;
   width: 100%;
 
-  .row1 {
-    margin-bottom: 26px;
-    width: 100%;
-    display: flex;
-    column-gap: min(1.6%, 24px);
-    justify-content: flex-start;
-
-    .image {
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-      height: fit-content;
-      object-fit: cover;
-    }
-    @media (max-width: 1050px) {
-      width: 100%;
-      .image {
-        width: 107px;
-      }
-    }
-    @media (max-width: 750px) {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
+  .image {
+    object-fit: cover;
+    width: 100%; // Ensures images take up full cell width
   }
 
-  .row2 {
-    margin-bottom: 26px;
-    display: flex;
-    column-gap: min(1.6%, 24px);
-    justify-content: center;
-
-    .image {
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-      // width: 100%;
-      height: fit-content;
-      object-fit: cover;
-    }
-    @media (max-width: 1050px) {
-      width: 100%;
-      .image {
-        width: 107px;
-      }
-    }
-    @media (max-width: 750px) {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .row3 {
-    display: flex;
-    justify-content: flex-end;
-    column-gap: min(1.6%, 24px);
-
-    .image {
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-      height: fit-content;
-      object-fit: cover;
-    }
-    @media (max-width: 1050px) {
-      width: 100%;
-      .image {
-        width: 107px;
-      }
-    }
-    @media (max-width: 750px) {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(3, 1fr); // 3 images per row on mobile
+    gap: 16px;
   }
 }

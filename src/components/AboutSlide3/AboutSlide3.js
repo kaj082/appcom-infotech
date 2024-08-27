@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./AboutSlide3.module.scss";
 import { Logo, MobileLogo } from "../../icons";
-import lady from "../../assets/about1.png";
+import lady from "../../assets/about1.jpeg";
 
 const AboutSlide3 = () => {
   return (

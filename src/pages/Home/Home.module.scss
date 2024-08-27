@@ -1,15 +1,27 @@
 .Home {
   .slide1 {
-    margin-top: 140px;
-    margin-bottom: 142px;
+    padding-top: 140px;
+    padding-bottom: 142px;
+    background-color: #ecf4ff;
+    margin-bottom: 0;
     @media (max-width: 750px) {
       flex-direction: column-reverse !important;
-      margin-top: 0;
-      margin-bottom: 110px;
+      padding-top: 0;
+      padding-bottom: 110px;
+    }
+  }
+  .slide2 {
+    background-color: #ecf4ff;
+    padding-bottom: 120px;
+    margin-bottom: 0;
+    @media (max-width: 750px) {
+      padding-top: 0;
+      padding-bottom: 110px;
     }
   }
   .slide6 {
     margin-top: 104px;
+
     @media (max-width: 750px) {
       flex-direction: column !important;
       padding-inline: 31px;
@@ -20,8 +32,8 @@
   .slide7 {
     margin-top: 114px;
     display: flex;
-    column-gap: 3%;
-    justify-content: unset;
+    justify-content: space-between;
+    column-gap: unset;
     @media (max-width: 750px) {
       flex-direction: column !important;
       padding-inline: 31px;

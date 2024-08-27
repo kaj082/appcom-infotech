@@ -19,12 +19,13 @@ const AboutSlide2 = () => {
           <div className={styles.right}>
             <p className={styles.desc}>
               we specialize in designing, implementing, and managing robust IT
-              infrastructure solutions tailored to meet the unique needs of our
-              clients. With a proven track record and years of industry
-              experience, we have served a diverse range of clients, from small
-              startups to large enterprises across various sectors. Our approach
-              is centered around building a strong IT foundation, essential for
-              competitiveness and innovation in the digital age.
+              infrastructure solutions that empower businesses to thrive in the
+              digital age. Our company was founded on the belief that a strong
+              IT foundation is essential for organizations to stay competitive
+              and drive innovation. With 4 years and five months of experience
+              in the industry, we have successfully served a diverse clientele,
+              ranging from small startups to large enterprises across various
+              sectors.
             </p>
             <Button prefixIcon={<ArrowRight />} className={styles.btn}>
               get started
