@@ -31,6 +31,7 @@ import IconWithDesc from "./IconWithDesc/IconWithDesc";
 import Loader from "./Loader/Loader";
 import PartnerSection from "./PartnerSection/PartnerSection";
 import ContactUsSlide2 from "./ContactUsSlide2/ContactUsSlide2";
+import MyMapComponent from "./MapComponent/MapComponent";
 
 export {
   Button,
@@ -66,4 +67,5 @@ export {
   Loader,
   PartnerSection,
   ContactUsSlide2,
+  MyMapComponent,
 };

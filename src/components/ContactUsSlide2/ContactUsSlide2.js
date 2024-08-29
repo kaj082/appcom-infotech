@@ -1,20 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ContactUsSlide2.module.scss";
 import bg1 from "../../assets/contactSlide2.png";
 import { Location } from "../../icons";
+import MyMapComponent from "../MapComponent/MapComponent";
+
+const locations = [
+  {
+    lat: 23.0275, // Latitude for Appcom Infotech LLP, Jodhpur Cross Road
+    lng: 72.5086, // Longitude for Appcom Infotech LLP, Jodhpur Cross Road
+    label: "Appcom Infotech LLP, Jodhpur Cross Road",
+  },
+  {
+    lat: 23.0235, // Latitude for Appcom Infotech LLP, S G Highway
+    lng: 72.5486, // Longitude for Appcom Infotech LLP, S G Highway
+    label: "Appcom Infotech LLP, S G Highway",
+  },
+];
 
 const ContactUsSlide2 = () => {
+  const [selectedLocation, setSelectedLocation] = useState(locations[0]);
+
   return (
     <div className={styles.ContactUsSlide2}>
       <div className={styles.main}>
-        <div className={styles.box1}>
-          <Location />
+        <div
+          className={`${styles.box1} ${
+            selectedLocation === locations[0] ? styles.selected : ""
+          }`}
+          onClick={() => setSelectedLocation(locations[0])}
+        >
+          {selectedLocation === locations[0] && <Location />}
           <p className={styles.value}>
-            Registered Office Address:Appcom Infotech LLP.1St Floor, OM
-            World,Jodhpur Cross Road, Satellite,Ahmedabad-380015
+            Registered Office Address: Appcom Infotech LLP. 1st Floor, OM World,
+            Jodhpur Cross Road, Satellite, Ahmedabad-380015
           </p>
         </div>
-        <div className={styles.box2}>
+        <div
+          className={`${styles.box2} ${
+            selectedLocation === locations[1] ? styles.selected : ""
+          }`}
+          onClick={() => setSelectedLocation(locations[1])}
+        >
+          {selectedLocation === locations[1] && <Location />}
           <div className={styles.rec}></div>
           <p className={styles.value}>
             Office Address: Appcom Infotech LLP. B-506, Sankalp Iconic Tower,
@@ -38,8 +65,8 @@ const ContactUsSlide2 = () => {
 
           <div className={styles.details}>
             <div className={styles.item}>
-              <p className={styles.value}> Phone: </p>
-              <p className={styles.value}> 9824413186</p>
+              <p className={styles.value}>Phone: </p>
+              <p className={styles.value}>9824413186</p>
             </div>
             <div className={styles.item}>
               <p className={styles.value}>Email: </p>
@@ -52,6 +79,7 @@ const ContactUsSlide2 = () => {
           </div>
         </div>
       </div>
+      <MyMapComponent center={selectedLocation} />
     </div>
   );
 };

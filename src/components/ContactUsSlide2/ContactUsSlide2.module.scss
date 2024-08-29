@@ -26,12 +26,12 @@
       padding-block: 40px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background-color: $blue1;
-      background-color: $blue1;
+      justify-content: flex-end;
+      background-color: #3a4754;
       height: 320px;
 
       .value {
+        margin-top: 33px;
         color: $white;
         font-family: $font-primary;
         font-size: 28px;
@@ -44,16 +44,14 @@
       @media (max-width: 1440px) {
         height: unset;
       }
+      &.selected {
+        background-color: $blue1;
+      }
     }
 
     .box1 {
       padding-left: 5%;
       padding-right: 3%;
-      background-color: $blue1;
-
-      .value {
-        margin-top: 33px;
-      }
     }
 
     .box2 {
