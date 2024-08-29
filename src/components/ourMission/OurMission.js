@@ -15,12 +15,11 @@ const OurMission = (props) => {
         <div className={styles.details}>
           <h4 className={styles.title}>Our Mission</h4>
           <p className={styles.description}>
-            Our mission is to empower businesses by providing reliable,
-            scalable, and secure IT infrastructure solutions that enable them to
-            streamline operations, enhance productivity, and achieve long-term
-            success. We strive to be a trusted partner, delivering exceptional
-            services and solutions tailored to our client’s s' unique
-            requirements.{" "}
+            To empower businesses by providing reliable, scalable, and secure IT
+            infrastructure solutions that enable them to streamline operations,
+            enhance productivity, and achieve long-term success. We strive to be
+            a trusted partner, delivering exceptional services and solutions
+            tailored to our client’s s' unique requirements.{" "}
           </p>
         </div>
         <div className={styles.imageContainer}>

@@ -11,29 +11,18 @@ const HomeSlide7 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // const templateParams = {
-    //   name,
-    //   email,
-    //   message,
-    // };
+    // Create the mailto link
+    const mailtoLink = `mailto:sales@appcominfotech.com?subject=Contact Form Submission from ${encodeURIComponent(
+      name
+    )}&body=${encodeURIComponent(
+      `Sender Email: ${email}\nName: ${name}\nMessage: ${message}`
+    )}`;
 
-    // emailjs
-    //   .send(
-    //     "YOUR_SERVICE_ID", // Replace   EmailJS service ID
-    //     "YOUR_TEMPLATE_ID", // Replace EmailJS template ID
-    //     templateParams,
-    //     "YOUR_USER_ID" // Replace EmailJS user ID
-    //   )
-    //   .then(
-    //     (response) => {
-    //       console.log("SUCCESS!", response.status, response.text);
-    //     },
-    //     (err) => {
-    //       console.error("FAILED...", err);
-    //     }
-    //   );
+    window.location.href = mailtoLink;
+    setName("");
+    setEmail("");
+    setMessage("");
   };
-
   return (
     <div className={styles.HomeSlide7}>
       <form onSubmit={handleSubmit} className={styles.left}>

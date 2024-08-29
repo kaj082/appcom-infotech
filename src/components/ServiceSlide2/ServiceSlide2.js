@@ -11,6 +11,7 @@ import Button from "../button/Button";
 import IconWithDesc from "../IconWithDesc/IconWithDesc";
 import bg from "../../assets/service2.png";
 import { contentofServiceSlide2 } from "../../contants/dummy";
+import PartnerSection from "../PartnerSection/PartnerSection";
 
 const ServiceSlide2 = () => {
   const images = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
@@ -33,7 +34,8 @@ const ServiceSlide2 = () => {
         <img src={bg} alt="background" className={styles.image} />
       </div>
       <div className={styles.main}>
-        <div className={styles.partner}>
+        <PartnerSection />
+        {/* <div className={styles.partner}>
           <p className={styles.title}>Our trusted partners</p>
           <div className={styles.imageContainer}>
             {images.map((item, index) => (
@@ -45,7 +47,7 @@ const ServiceSlide2 = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={styles.part2}>
         <p className={styles.title}>HPC Consulting and Solution Design</p>
@@ -69,7 +71,7 @@ const ServiceSlide2 = () => {
                 <CheckIconWithdesc desc={item} key={index} />
               ))}
             </div>
-            <Button className={styles.btn}>Learn more</Button>
+            {/* <Button className={styles.btn}>Learn more</Button> */}
           </div>
         </div>
       </div>

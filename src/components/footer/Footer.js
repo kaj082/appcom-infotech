@@ -15,7 +15,7 @@ const Footer = () => {
     },
     {
       to: "/services",
-      title: "services",
+      title: "Services",
     },
 
     {

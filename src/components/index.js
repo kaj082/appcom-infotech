@@ -29,6 +29,8 @@ import ServicesBox from "./ServicesBox/ServicesBox";
 import ServiceSlider from "./ServiceSlider/ServiceSlider";
 import IconWithDesc from "./IconWithDesc/IconWithDesc";
 import Loader from "./Loader/Loader";
+import PartnerSection from "./PartnerSection/PartnerSection";
+import ContactUsSlide2 from "./ContactUsSlide2/ContactUsSlide2";
 
 export {
   Button,
@@ -62,4 +64,6 @@ export {
   ServicesBox,
   ServiceSlider,
   Loader,
+  PartnerSection,
+  ContactUsSlide2,
 };

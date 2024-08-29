@@ -10,6 +10,7 @@ import Check from "./Check";
 import ArrowLeft from "./ArrowLeft";
 import Dot from "./Dot";
 import LeftIcon from "./leftIcon";
+import Location from "./Location";
 
 export {
   Logo,
@@ -24,4 +25,5 @@ export {
   ArrowLeft,
   Dot,
   LeftIcon,
+  Location,
 };

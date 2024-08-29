@@ -15,8 +15,19 @@ import {
   homeslide7Data,
 } from "../../contants/dummy";
 import styles from "./Home.module.scss";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../contants/RouterContant";
 
 const Home = () => {
+  const navigation = useNavigate();
+
+  const handleSlide1Click = () => {
+    navigation(ROUTES.SERVICES);
+  };
+
+  const handleSlide5Click = () => {
+    navigation(ROUTES.CONTACT_US);
+  };
   return (
     <div className={styles.Home}>
       <PrimaryLayout>
@@ -24,12 +35,17 @@ const Home = () => {
           type2={true}
           data={homeslide1Data}
           className={styles.slide1}
+          onClick={handleSlide1Click}
         />
         <OurMission className={styles.slide2} />
         <HomeSlide3 />
         <HomeSlide4 />
         <HomeSlide5 />
-        <DetailWithImage data={homeslide6Data} className={styles.slide6} />
+        <DetailWithImage
+          onClick={handleSlide5Click}
+          data={homeslide6Data}
+          className={styles.slide6}
+        />
         <HomeSlide6 />
         <HomeSlide7 />
         <DetailWithImage

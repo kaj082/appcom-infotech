@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Contact.module.scss";
 
-import { ContactUs, HomeSlide7, PrimaryLayout } from "../../components";
+import {
+  ContactUs,
+  ContactUsSlide2,
+  HomeSlide7,
+  PrimaryLayout,
+} from "../../components";
 
 const Contact = () => {
   return (
@@ -11,6 +16,7 @@ const Contact = () => {
         <div className={styles.contactus}>
           <HomeSlide7 />
         </div>
+        <ContactUsSlide2 />
       </PrimaryLayout>
     </div>
   );

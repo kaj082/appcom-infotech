@@ -4,10 +4,18 @@ import bg from "../../assets/abouts2.png";
 import OurMission from "../ourMission/OurMission";
 import Button from "../button/Button";
 import { ArrowRight } from "../../icons";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../contants/RouterContant";
+import PartnerSection from "../PartnerSection/PartnerSection";
 
 const AboutSlide2 = () => {
+  const navigation = useNavigate();
+  const handleClick = () => {
+    navigation(ROUTES.SERVICES);
+  };
   return (
     <div className={styles.AboutSlide2}>
+      <PartnerSection />
       <div className={styles.main}>
         <div className={styles.upperdiv}>
           <div className={styles.left}>
@@ -27,7 +35,11 @@ const AboutSlide2 = () => {
               ranging from small startups to large enterprises across various
               sectors.
             </p>
-            <Button prefixIcon={<ArrowRight />} className={styles.btn}>
+            <Button
+              prefixIcon={<ArrowRight />}
+              onClick={handleClick}
+              className={styles.btn}
+            >
               get started
             </Button>
           </div>

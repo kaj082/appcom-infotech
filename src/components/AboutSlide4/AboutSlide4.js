@@ -4,9 +4,21 @@ import cx from "classnames";
 
 import Button from "../button/Button";
 import bg1 from "../../assets/abouts4.png";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../contants/RouterContant";
 
 const AboutSlide4 = (props) => {
-  const { image, className } = props;
+  const { image, className, onClick } = props;
+
+  const navigation = useNavigate();
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+      return;
+    }
+    navigation(ROUTES.SERVICES);
+  };
   return (
     <div className={cx(styles.AboutSlide4, className)}>
       <div className={styles.bg} />
@@ -23,7 +35,9 @@ const AboutSlide4 = (props) => {
           Empowering Businesses in the Digital Age
         </h3>
 
-        <Button className={styles.btn}>Explore Our Services</Button>
+        <Button className={styles.btn} onClick={handleClick}>
+          Explore Our Services
+        </Button>
       </div>
     </div>
   );

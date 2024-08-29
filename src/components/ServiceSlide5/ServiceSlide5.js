@@ -50,7 +50,7 @@ const ServiceSlide5 = () => {
               implement high-performance computing solutions that meet your
               specific needs. Our services include:
             </p>
-            <Button className={styles.btn}>Learn more</Button>
+            {/* <Button className={styles.btn}>Learn more</Button> */}
           </div>
           <div className={styles.row1}>
             {descriptionsServiceSlide4[active]?.map((item, idx) => (

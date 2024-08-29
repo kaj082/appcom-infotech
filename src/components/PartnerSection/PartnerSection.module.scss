@@ -1,0 +1,40 @@
+@import "../../globalStyles/component.scss";
+
+.partner {
+  width: 100%;
+  padding-inline: 9.37%;
+  background: #f2f7ff;
+  padding-block: 45.5px;
+
+  .title {
+    margin-bottom: 32px;
+    color: #2e2e27;
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    text-transform: capitalize;
+  }
+
+  .imageContainer {
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .con {
+      width: fit-content !important;
+      height: auto;
+      .image {
+        width: 152px;
+        height: fit-content;
+        object-fit: contain;
+
+        @media (max-width: 750px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

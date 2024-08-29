@@ -13,7 +13,7 @@ const ServicesBox = ({ data, title, desc }) => {
           <CheckIconWithdesc desc={item} key={`${item}+index`} />
         ))}
       </div>
-      <Button className={styles.btn}>Learn more</Button>
+      {/* <Button className={styles.btn}>Learn more</Button> */}
     </div>
   );
 };

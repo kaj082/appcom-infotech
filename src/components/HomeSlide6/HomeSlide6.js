@@ -13,9 +13,9 @@ const HomeSlide6 = () => {
       </div>
       <div className={styles.titleContainer}>
         <p className={styles.title}>We take pride in our achievements</p>
-        <Button prefixIcon={<ArrowRight />} className={styles.btn}>
+        {/* <Button prefixIcon={<ArrowRight />} className={styles.btn}>
           View Our Success Stories
-        </Button>
+        </Button> */}
       </div>
       <div className={styles.row1}>
         <Achievemnets
@@ -54,9 +54,9 @@ const HomeSlide6 = () => {
           desc={"Implementation of multi-petabyte NetApp FAS..."}
         />
       </div>
-      <Button prefixIcon={<ArrowRight />} className={styles.btn1}>
+      {/* <Button prefixIcon={<ArrowRight />} className={styles.btn1}>
         View Our Success Stories
-      </Button>
+      </Button> */}
     </div>
   );
 };

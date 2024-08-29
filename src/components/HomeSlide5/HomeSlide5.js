@@ -6,6 +6,8 @@ import box3 from "../../assets/hsol3.png";
 import bg from "../../assets/clipPath.png";
 import IconWithDesc from "../IconWithDesc/IconWithDesc";
 import { LeftIcon } from "../../icons";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../contants/RouterContant";
 
 const HomeSlide5 = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -32,6 +34,11 @@ const HomeSlide5 = () => {
       title: "HPC Software and Application Support",
     },
   ];
+
+  const navigation = useNavigate();
+  const handleClick = () => {
+    navigation(ROUTES.SERVICES);
+  };
 
   return (
     <div className={styles.HomeSlide5}>
@@ -84,7 +91,9 @@ const HomeSlide5 = () => {
         ))}
       </div>
       <div className={styles.con}>
-        <button className={styles.btn}>Explore Our Services</button>
+        <button className={styles.btn} onClick={handleClick}>
+          Explore Our Services
+        </button>
       </div>
     </div>
   );

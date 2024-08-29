@@ -19,7 +19,7 @@ const AboutSlide3 = () => {
           ever-evolving digital landscape.
         </p>
         <div className={styles.titles}>
-          <span className={styles.name}>Dr. Anita Gandhi </span>|
+          <span className={styles.name}>Mr. Jignesh Patel </span>|
           <span className={styles.position}> Founder & CEO</span>
         </div>
         <div className={styles.logo}>

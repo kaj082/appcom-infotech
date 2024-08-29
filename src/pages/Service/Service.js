@@ -13,14 +13,25 @@ import {
 } from "../../components";
 import bg from "../../assets/sslide3.png";
 import { serviceslide7Data } from "../../contants/dummy";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../contants/RouterContant";
 
 const Service = () => {
+  const navigation = useNavigate();
+
+  const handleClick = () => {
+    navigation(ROUTES.CONTACT_US);
+  };
   return (
     <div className={styles.Service}>
       <PrimaryLayout>
         <ServiceSlide1 />
         <ServiceSlide2 />
-        <AboutSlide4 image={bg} className={styles.slide3} />
+        <AboutSlide4
+          image={bg}
+          className={styles.slide3}
+          onClick={handleClick}
+        />
         <ServiceSlide3 />
         <ServiceSlide4 />
         <ServiceSlide5 />
@@ -29,6 +40,7 @@ const Service = () => {
           type1={true}
           data={serviceslide7Data}
           className={styles.slide7}
+          onClick={handleClick}
         />
         <HomeSlide7 />
       </PrimaryLayout>

@@ -45,7 +45,7 @@ const HomeSlide4 = () => {
             </div>
           ))}
         </div>
-        <Button className={styles.btn}>get started</Button>
+        {/* <Button className={styles.btn}>get started</Button> */}
       </div>
       <div className={styles.bg2}>
         <img src={bg1} alt="" className={styles.image} />
