@@ -31,7 +31,7 @@ const ContactUs = () => {
   return (
     <div className={styles.ContactUs}>
       <div className={styles.bg}>
-        <img src={bg} alt="Background " className={styles.image} />
+        <img src={bg} alt="Background" className={styles.image} />
         <div className={styles.bgg} />
       </div>
 
@@ -69,7 +69,7 @@ const ContactUs = () => {
             </Button>
           </form>
           <div className={styles.bg1}>
-            <img src={bg1} alt="Background Graphic" className={styles.image} />
+            <img src={bg1} alt="group" className={styles.image} />
           </div>
           <div className={styles.rec} />
         </div>

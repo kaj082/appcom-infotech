@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./ServicesBox.module.scss";
-import Button from "../button/Button";
 import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
 
 const ServicesBox = ({ data, title, desc }) => {

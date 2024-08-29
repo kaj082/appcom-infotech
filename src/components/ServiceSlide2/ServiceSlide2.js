@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 import styles from "./ServiceSlide2.module.scss";
-import Logo1 from "../../assets/Logo1.png";
-import Logo2 from "../../assets/Logo2.png";
-import Logo3 from "../../assets/Logo3.png";
-import Logo4 from "../../assets/Logo4.png";
-import Logo5 from "../../assets/Logo5.png";
-import Logo6 from "../../assets/Logo6.png";
+
 import CheckIconWithdesc from "../CheckIconWithdesc/CheckIconWithdesc";
-import Button from "../button/Button";
 import IconWithDesc from "../IconWithDesc/IconWithDesc";
 import bg from "../../assets/service2.png";
 import { contentofServiceSlide2 } from "../../contants/dummy";
 import PartnerSection from "../PartnerSection/PartnerSection";
 
 const ServiceSlide2 = () => {
-  const images = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
   const description = [
     "Comprehensive HPC assessment and consulting services:",
     "HPC System Deployment and Configuration:",

@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./HomeSlide6.module.scss";
-import Button from "../button/Button";
-import { ArrowRight } from "../../icons";
 import Achievemnets from "../Achievemnets/Achievemnets";
 import bg2 from "../../assets/slide4bg2.png";
 

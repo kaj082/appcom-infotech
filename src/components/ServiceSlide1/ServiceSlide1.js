@@ -3,7 +3,6 @@ import styles from "./ServiceSlide1.module.scss";
 import bg from "../../assets/clipPath.png";
 import image from "../../assets/sslide1.png";
 import small from "../../assets/sslidesmall.gif";
-import Button from "../button/Button";
 
 const ServiceSlide1 = () => {
   const data = {

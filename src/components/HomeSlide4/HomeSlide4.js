@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./HomeSlide4.module.scss";
 import bg1 from "../../assets/slide4bg1.png";
 import bg2 from "../../assets/slide4bg2.png";
-import Button from "../button/Button";
 
 const HomeSlide4 = () => {
   const details = [
